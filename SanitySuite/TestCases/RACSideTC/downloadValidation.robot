@@ -10,7 +10,7 @@ Test Teardown  Close Browser Window
 *** Variables ***
 ${Browser}  Chrome
 #${URL}  https://ccautomation.qa.cyberinc.com/viewer/#https://www.google.com
-${URL1}  https://ccautomation.qa.cyberinc.com/viewer/#https://filesamples.com/formats/pdf
+${URL1}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&username=rb@fp.com&url=https://filesamples.com/formats/pdf
 
 *** Test Cases ***
 Download PDF

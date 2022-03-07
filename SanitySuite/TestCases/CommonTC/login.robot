@@ -10,7 +10,7 @@ Suite Teardown  After Each Test Suite
 
 *** Variables ***
 ${Browser}  headlesschrome
-${URL}  https://ccautomation.qa.cyberinc.com/viewer/#https://www.google.com
+${URL}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&username=rb@fp.com&url=https://www.google.com
 
 *** Test Cases ***
 

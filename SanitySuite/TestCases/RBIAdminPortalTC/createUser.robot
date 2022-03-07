@@ -33,6 +33,7 @@ Login to RBI Admin Portal
     click element  ${enableUser}
     execute javascript  window.scrollTo(0,700)
     double click element  ${userRole}
+    sleep  3 seconds
     #scroll element into view  ${pdfFile}
     double click element  ${confirmButton}
     Click Button  ${saveButton}
