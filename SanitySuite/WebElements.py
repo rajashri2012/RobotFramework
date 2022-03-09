@@ -16,10 +16,6 @@ loginSuccessful = "//ul[@class='breadcrumb']"
 bellIcon = "//i[@class='feather icon-bell']"
 adminUrl = "https://ccautomation.qa.cyberinc.com/"
 UsersOption = "//i[@class='feather icon-user']"
-#"//a[@class='ripple ng-tns-c3-0 ng-star-inserted active']"
-#"//div[@class='d-color ng-tns-c3-11 ng-star-inserted']//ul[@class='pcoded-item pcoded-left-item ng-tns-c3-11 ng-star-inserted'][1]//li[@ng-reflect-group='user']"
-#"//a[@href='/user/list' and @class='ripple ng-tns-c3-11 ng-star-inserted active']"
-#"//a[@class='ripple ng-tns-c3-11 ng-star-inserted active']//span[@class='pcoded-mtext']"
 createNewUserButton = "//i[@ng-reflect-ngb-tooltip='Create Forcepoint RBI User']"
 displayName ="//input[@id='name']"
 usernameEmail = "//input[@id='email']"
@@ -32,6 +28,14 @@ saveButton = "//button[@type ='submit']"
 deleteButton = "//tr/td[contains(text(), 'User1')]/following-sibling::td/a[8]/i[1]"
 searchSpace = "//input[@type='search']"
 #userDeletedMsg = "//span[contains(text(),'User deleted successfully')]"
+
+
+#Add License Key Functionality
+myOrganization = "//span[normalize-space()='My Organization']"
+enterLicenseKey = "//textarea[@id='key']"
+updateButton = "//input[@value='Update']"
+licenseKey = "-----BEGIN LICENSE KEY-----L/+BAwEBB2xpY2Vuc2UB/4IAAQIBB1BheWxvYWQBCgABCVNpZ25hdHVyZQEKAAAA/gIp/4IB/gEe/gEbEAAHW111aW50OAr+AQ0A/gEJeyJmdWxsSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwic2VsZWN0aXZlSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwib3JnYW5pemF0aW9uIjoiTWFydmVsIFN0dWRpb3MiLCJmZWF0dXJlcyI6WyJjb3JlIl0sInNrdXMiOlsiUkJJRiIsIlJCSVMiXSwidXNhZ2UiOiJ0ZXN0IiwiZW5kRGF0ZSI6IjIwMjUtMTAtMDFUMDA6MDA6MDBaIiwic3RhcnREYXRlIjoiMjAyMS0xMC0wMVQwMDowMDowMFoiLCJvcmdhbml6YXRpb25FbWFpbCI6ImFkbWluQG1hcnZlbC5lbnQifQH+AQDQxvZcbQnH2iR8w/W4l/v12p2CKuLOorAWF4EKmEhKj8Af8AhMeQnLJIslw3yP1ryaKIg/o5WNoClxU+KrtSvqaeLH/GXe0h3aIY/XaA7G5fO6IGRslr4mEzu0FK+ndMBgyjqtIp9ha8Is06lvuy0OoXh96x+OnlAJ6oUZk6ZynJ2aDUQ5GAVcsWVgmNG7KwIbpqv5yo7deO9sHDlPW8KGnPfIEpjtZ57sZwdvGNgeRCLegAYA0/W4/ueCqq7RLw+eWyoiYtKP+iMx3StM1fYdT55lYFxLUJaPd4ni0+IGx2rkSTTqsiT2KmoDnZK3ojh1xvm+z+ABDnH2DLcj+KJtAA==-----END LICENSE KEY-----"
+
 
 #Browser Navigator Locators
 

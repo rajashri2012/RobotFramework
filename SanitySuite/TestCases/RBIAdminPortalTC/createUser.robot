@@ -5,9 +5,11 @@ Variables  ../WebElements.py
 Resource  ../Resources/KeywordDefinationFiles/setup_teardown.robot
 Test Setup  Start Browser and Maximize  ${URL}  ${Browser}
 Test Teardown  Close Browser Window
+Suite Setup  Before Each Test Suite
+Suite Teardown  After Each Test Suite
 
 *** Variables ***
-${Browser}  Chrome
+${Browser}  headlesschrome
 ${URL}  https://ccautomation.qa.cyberinc.com
 
 *** Test Cases ***
@@ -21,6 +23,7 @@ Login to RBI Admin Portal
     Click Button  ${signInButton}
     wait until page contains  Web Security
 #Create User Functionality
+    sleep  3 seconds
     click element  ${UsersOption}
     sleep  3 seconds
     wait until page contains  Users
@@ -33,8 +36,7 @@ Login to RBI Admin Portal
     click element  ${enableUser}
     execute javascript  window.scrollTo(0,700)
     double click element  ${userRole}
-    sleep  3 seconds
-    #scroll element into view  ${pdfFile}
+    sleep  1 seconds
     double click element  ${confirmButton}
     Click Button  ${saveButton}
 #Delete Newly Created User Functionality

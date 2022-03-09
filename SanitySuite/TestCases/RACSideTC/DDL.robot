@@ -7,7 +7,7 @@ Test Setup  Start Browser and Maximize  ${URL1}  ${Browser}
 Test Teardown  Close Browser Window
 
 *** Variables ***
-${Browser}  Chrome
+${Browser}  headlesschrome
 ${URL1}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&url=https://file-examples-com.github.io/uploads/2017/02/file_example_CSV_5000.csv
 ${URL2}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&url=https://file-examples-com.github.io/uploads/2017/02/zip_2MB.zip
 ${URL3}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&url=https://file-examples-com.github.io/uploads/2018/04/file_example_WMV_480_1_2MB.wmv
