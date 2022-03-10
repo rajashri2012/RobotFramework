@@ -10,9 +10,8 @@ Suite Setup  Before Each Test Suite
 Suite Teardown  After Each Test Suite
 #Test Template  Add License Key
 *** Variables ***
-${Browser}   chrome
 ${URL}       https://ccautomation.qa.cyberinc.com
-
+${Browser}   Chrome
 *** Test Cases ***
 Add Products License Key
     [Arguments]  ${licenseKey}

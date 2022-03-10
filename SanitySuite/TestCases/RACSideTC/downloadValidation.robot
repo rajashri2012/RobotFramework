@@ -10,10 +10,9 @@ Suite Setup  Before Each Test Suite
 Suite Teardown  After Each Test Suite
 
 *** Variables ***
-${Browser}  headlesschrome
 #${URL}  https://ccautomation.qa.cyberinc.com/viewer/#https://www.google.com
 ${URL1}  https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&username=rb@fp.com&url=https://filesamples.com/formats/pdf
-
+${Browser}  headlesschrome
 *** Test Cases ***
 Download PDF
     # create unique folder
@@ -25,6 +24,9 @@ Download PDF
     # list of plugins to disable. disabling PDF Viewer is necessary so that PDFs are saved rather than displayed
     ${disabled}    Create List    Chrome PDF Viewer
     ${prefs}    Create Dictionary    download.default_directory=${download directory}    plugins.plugins_disabled=${disabled}
+    Call Method  ${chrome options}  add_argument   headless
+    Call Method    ${chrome_options}   add_argument    disable-gpu
+    Call Method     ${chrome_options}    to_capabilities
     Call Method     ${chrome options}    add_argument    --disable-notifications
     Call Method  ${chrome options}  add_argument  --disable-infobars
     Call Method    ${chrome options}    add_experimental_option    prefs    ${prefs}
@@ -42,7 +44,7 @@ Download PDF
     sleep  5 seconds
     execute javascript  window.scrollTo(0,500)
     #scroll element into view  ${pdfFile}
-    sleep  2 seconds
+    sleep  1 seconds
     Click Link    ${pdfFile}    # downloads a file
     # wait for download to finish
     ${file}    Wait Until Keyword Succeeds    1 min    2 sec    Download should be done    ${download directory}

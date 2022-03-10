@@ -1,0 +1,10 @@
+datasources:1cefd7ef3c2f6f3eced82d6844c337adf458406e
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:5e1dbd2ea60c3c08dc22953877750f7260d7ddee
+--suite TestCases.CommonTC.Login
+--suite TestCases.CommonTC.invalidLoginCases
+--suite TestCases.RACSideTC.DDL
+--suite TestCases.RACSideTC.downloadValidation
+--suite TestCases.RBIAdminPortalTC.addLicenseKey
+--suite TestCases.RBIAdminPortalTC.createUser

@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220309 15:24:42.929" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCases" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases">
+<kw name="Before each Test Suite" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:24:42.976" level="INFO">Test Suite Started</msg>
+<status status="PASS" starttime="20220309 15:24:42.976" endtime="20220309 15:24:42.976"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:42.976" endtime="20220309 15:24:42.976"/>
+</kw>
+<suite id="s1-s1" name="CommonTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC">
+<suite id="s1-s1-s1" name="invalidLoginCases" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\invalidLoginCases.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:24:43.336" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:24:43.336" endtime="20220309 15:24:43.336"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:43.336" endtime="20220309 15:24:43.336"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Invalid Login Scenarios">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:24:43.351" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;username=rb@fp.com&amp;url=https://www.google.com'.</msg>
+<status status="PASS" starttime="20220309 15:24:43.351" endtime="20220309 15:24:45.246"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:24:45.246" endtime="20220309 15:24:45.374"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:24:47.376" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:24:45.374" endtime="20220309 15:24:47.376"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:43.351" endtime="20220309 15:24:47.376"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Input Text</arg>
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<msg timestamp="20220309 15:24:47.376" level="FAIL">No keyword with name 'Invalid Login Scenarios' found.</msg>
+<status status="FAIL" starttime="20220309 15:24:47.376" endtime="20220309 15:24:47.376"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Input Text</arg>
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<msg timestamp="20220309 15:24:47.376" level="FAIL">No keyword with name 'Invalid Login Scenarios' found.</msg>
+<status status="FAIL" starttime="20220309 15:24:47.376" endtime="20220309 15:24:47.376"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Click Button</arg>
+<arg>${login_Button}</arg>
+<msg timestamp="20220309 15:24:47.392" level="FAIL">No keyword with name 'Invalid Login Scenarios' found.</msg>
+<status status="FAIL" starttime="20220309 15:24:47.376" endtime="20220309 15:24:47.392"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:24:47.392" endtime="20220309 15:24:49.485"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:47.392" endtime="20220309 15:24:49.485"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:24:43.336" endtime="20220309 15:24:49.485">Several failures occurred:
+
+1) No keyword with name 'Invalid Login Scenarios' found.
+
+2) No keyword with name 'Invalid Login Scenarios' found.
+
+3) No keyword with name 'Invalid Login Scenarios' found.</status>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:24:49.485" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:24:49.485" endtime="20220309 15:24:49.485"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:49.485" endtime="20220309 15:24:49.485"/>
+</kw>
+<doc>Invalid Login Functionality</doc>
+<status status="FAIL" starttime="20220309 15:24:42.976" endtime="20220309 15:24:49.485"/>
+</suite>
+<suite id="s1-s1-s2" name="Login" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\login.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:24:49.501" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:24:49.501" endtime="20220309 15:24:49.501"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:49.501" endtime="20220309 15:24:49.501"/>
+</kw>
+<test id="s1-s1-s2-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:24:49.501" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;username=rb@fp.com&amp;url=https://www.google.com'.</msg>
+<status status="PASS" starttime="20220309 15:24:49.501" endtime="20220309 15:24:51.221"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:24:51.221" endtime="20220309 15:24:51.341"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:24:53.350" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:24:51.342" endtime="20220309 15:24:53.350"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:49.501" endtime="20220309 15:24:53.350"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:24:53.350" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='login_username']'.</msg>
+<status status="PASS" starttime="20220309 15:24:53.350" endtime="20220309 15:24:53.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:24:53.490" level="INFO">Typing text 'Admin@123' into text field '//input[@id='login_pwd']'.</msg>
+<status status="PASS" starttime="20220309 15:24:53.489" endtime="20220309 15:24:53.589"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:24:53.590" level="INFO">Clicking button '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20220309 15:24:53.590" endtime="20220309 15:24:53.667"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:24:53.669" endtime="20220309 15:24:55.743"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:53.668" endtime="20220309 15:24:55.743"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:49.501" endtime="20220309 15:24:55.743"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:24:55.743" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:24:55.743" endtime="20220309 15:24:55.743"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:55.743" endtime="20220309 15:24:55.743"/>
+</kw>
+<doc>Login Functionality</doc>
+<status status="PASS" starttime="20220309 15:24:49.485" endtime="20220309 15:24:55.743"/>
+</suite>
+<status status="FAIL" starttime="20220309 15:24:42.976" endtime="20220309 15:24:55.743"/>
+</suite>
+<suite id="s1-s2" name="RACSideTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC">
+<suite id="s1-s2-s1" name="DDL" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\DDL.robot">
+<test id="s1-s2-s1-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:24:55.759" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;url=https://file-examples-com.github.io/uploads/2017/02/file_example_CSV_5000.csv'.</msg>
+<status status="PASS" starttime="20220309 15:24:55.759" endtime="20220309 15:24:57.505"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:24:57.505" endtime="20220309 15:24:57.622"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:24:59.636" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:24:57.623" endtime="20220309 15:24:59.636"/>
+</kw>
+<status status="PASS" starttime="20220309 15:24:55.759" endtime="20220309 15:24:59.636"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:00.650" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220309 15:24:59.636" endtime="20220309 15:25:00.650"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:00.650" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='login_username']'.</msg>
+<status status="PASS" starttime="20220309 15:25:00.650" endtime="20220309 15:25:00.776"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:00.777" level="INFO">Typing text 'Admin@123' into text field '//input[@id='login_pwd']'.</msg>
+<status status="PASS" starttime="20220309 15:25:00.776" endtime="20220309 15:25:00.870"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:00.871" level="INFO">Clicking button '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20220309 15:25:00.871" endtime="20220309 15:25:00.941"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220309 15:25:00.941" endtime="20220309 15:25:00.944"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:10.955" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220309 15:25:00.944" endtime="20220309 15:25:10.955"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>${fpLogoImg}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20220309 15:25:31.107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220309 15:25:31.110" level="FAIL">Page should have contained image '//div[@id='downloadPageLoader']//img' but did not.</msg>
+<status status="FAIL" starttime="20220309 15:25:10.955" endtime="20220309 15:25:31.110"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:25:31.110" endtime="20220309 15:25:33.188"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:31.110" endtime="20220309 15:25:33.188"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:24:55.759" endtime="20220309 15:25:33.188">Page should have contained image '//div[@id='downloadPageLoader']//img' but did not.</status>
+</test>
+<doc>Direct Download Link Functionality</doc>
+<status status="FAIL" starttime="20220309 15:24:55.743" endtime="20220309 15:25:33.188"/>
+</suite>
+<suite id="s1-s2-s2" name="downloadValidation" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\downloadValidation.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:25:33.204" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:25:33.204" endtime="20220309 15:25:33.204"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:33.204" endtime="20220309 15:25:33.204"/>
+</kw>
+<test id="s1-s2-s2-t1" name="Download PDF">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:25:33.204" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'.</msg>
+<status status="PASS" starttime="20220309 15:25:33.204" endtime="20220309 15:25:34.872"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:25:34.872" endtime="20220309 15:25:34.985"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:25:34.985" endtime="20220309 15:25:36.998"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:33.204" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Get Time" library="BuiltIn">
+<var>${now}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">${now} = 1646839536</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${download directory}</var>
+<arg>${OUTPUT DIR}</arg>
+<arg>downloads_${now}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">${download directory} = C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${download directory}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO" html="true">Created directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${chrome options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001AF989B3790&gt;</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${disabled}</var>
+<arg>Chrome PDF Viewer</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${prefs}</var>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">${prefs} = {'download.default_directory': 'C:\\RAC Automation_RobotFramework\\SanitySuite\\downloads_1646839536', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>to_capabilities</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-infobars</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:36.998"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220309 15:25:36.998" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220309 15:25:36.998" endtime="20220309 15:25:38.312"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20220309 15:25:38.312" endtime="20220309 15:25:38.332"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL1}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220309 15:25:38.334" level="INFO">Opening url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'</msg>
+<status status="PASS" starttime="20220309 15:25:38.332" endtime="20220309 15:25:38.778"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:40.793" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:25:38.778" endtime="20220309 15:25:40.793"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:25:40.793" endtime="20220309 15:25:40.903"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:42.914" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:25:40.903" endtime="20220309 15:25:42.914"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:42.914" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='login_username']'.</msg>
+<status status="PASS" starttime="20220309 15:25:42.914" endtime="20220309 15:25:43.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:43.048" level="INFO">Typing text 'Admin@123' into text field '//input[@id='login_pwd']'.</msg>
+<status status="PASS" starttime="20220309 15:25:43.048" endtime="20220309 15:25:43.156"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:43.157" level="INFO">Clicking button '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20220309 15:25:43.156" endtime="20220309 15:25:43.242"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:48.258" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220309 15:25:43.243" endtime="20220309 15:25:48.258"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 15:25:48.258" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 15:25:48.258" endtime="20220309 15:25:48.272"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:25:49.290" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220309 15:25:48.274" endtime="20220309 15:25:49.290"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${pdfFile}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220309 15:25:49.290" level="INFO">Clicking link '//main[@class='col-12 main-content rounded-bg marg-top padd-top']//div[1]//a[1]'.</msg>
+<status status="PASS" starttime="20220309 15:25:49.290" endtime="20220309 15:25:49.375"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${file}</var>
+<arg>1 min</arg>
+<arg>2 sec</arg>
+<arg>Download should be done</arg>
+<arg>${download directory}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220309 15:25:49.376" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536&lt;/a&gt;'.</msg>
+<msg timestamp="20220309 15:25:49.376" level="INFO">0 files:
+</msg>
+<msg timestamp="20220309 15:25:49.376" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220309 15:25:49.376" endtime="20220309 15:25:49.376"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220309 15:25:49.380" level="INFO">Length is 0</msg>
+<msg timestamp="20220309 15:25:49.380" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220309 15:25:49.376" endtime="20220309 15:25:49.381"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:49.381" endtime="20220309 15:25:49.381"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:49.381" endtime="20220309 15:25:49.381"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:49.381" endtime="20220309 15:25:49.381"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:25:49.376" endtime="20220309 15:25:49.381"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220309 15:25:51.384" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536&lt;/a&gt;'.</msg>
+<msg timestamp="20220309 15:25:51.384" level="INFO">0 files:
+</msg>
+<msg timestamp="20220309 15:25:51.384" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220309 15:25:51.383" endtime="20220309 15:25:51.384"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220309 15:25:51.385" level="INFO">Length is 0</msg>
+<msg timestamp="20220309 15:25:51.385" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220309 15:25:51.385" endtime="20220309 15:25:51.385"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:51.386" endtime="20220309 15:25:51.386"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:51.386" endtime="20220309 15:25:51.386"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:51.386" endtime="20220309 15:25:51.386"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:25:51.382" endtime="20220309 15:25:51.387"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220309 15:25:53.390" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536&lt;/a&gt;'.</msg>
+<msg timestamp="20220309 15:25:53.390" level="INFO">0 files:
+</msg>
+<msg timestamp="20220309 15:25:53.390" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220309 15:25:53.389" endtime="20220309 15:25:53.390"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220309 15:25:53.391" level="INFO">Length is 0</msg>
+<msg timestamp="20220309 15:25:53.392" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220309 15:25:53.390" endtime="20220309 15:25:53.392"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:53.393" endtime="20220309 15:25:53.393"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:53.394" endtime="20220309 15:25:53.394"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220309 15:25:53.394" endtime="20220309 15:25:53.394"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:25:53.388" endtime="20220309 15:25:53.395"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220309 15:25:55.400" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536&lt;/a&gt;'.</msg>
+<msg timestamp="20220309 15:25:55.400" level="INFO">1 file:
+sample3.pdf</msg>
+<msg timestamp="20220309 15:25:55.400" level="INFO">${files} = ['sample3.pdf']</msg>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220309 15:25:55.400" level="INFO">Length is 1</msg>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20220309 15:25:55.400" level="INFO">${file} = C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536\sample3.pdf</msg>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:25:55.400" level="INFO">File was successfully downloaded to C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536\sample3.pdf</msg>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:55.400"/>
+</kw>
+<msg timestamp="20220309 15:25:55.400" level="INFO">${file} = C:\RAC Automation_RobotFramework\SanitySuite\downloads_1646839536\sample3.pdf</msg>
+<status status="PASS" starttime="20220309 15:25:49.376" endtime="20220309 15:25:55.400"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:57.509"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:55.400" endtime="20220309 15:25:57.509"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:33.204" endtime="20220309 15:25:57.509"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:25:57.509" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:25:57.509" endtime="20220309 15:25:57.509"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:57.509" endtime="20220309 15:25:57.509"/>
+</kw>
+<doc>Direct Download File Validation Functionality</doc>
+<status status="PASS" starttime="20220309 15:25:33.188" endtime="20220309 15:25:57.509"/>
+</suite>
+<status status="FAIL" starttime="20220309 15:24:55.743" endtime="20220309 15:25:57.509"/>
+</suite>
+<suite id="s1-s3" name="RBIAdminPortalTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC">
+<suite id="s1-s3-s1" name="addLicenseKey" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\addLicenseKey.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:25:57.525" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:25:57.525" endtime="20220309 15:25:57.525"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:57.525" endtime="20220309 15:25:57.525"/>
+</kw>
+<test id="s1-s3-s1-t1" name="Add Products License Key">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:25:57.541" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.qa.cyberinc.com'.</msg>
+<status status="PASS" starttime="20220309 15:25:57.541" endtime="20220309 15:26:02.688"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:26:02.688" endtime="20220309 15:26:02.814"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:04.833" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:02.814" endtime="20220309 15:26:04.833"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:57.541" endtime="20220309 15:26:04.833"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220309 15:26:04.833" endtime="20220309 15:26:04.833"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_t}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220309 15:26:04.833" level="INFO">${default_t} = 20 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:04.833" endtime="20220309 15:26:04.833"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_t}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220309 15:26:04.833" endtime="20220309 15:26:04.833"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalUsernameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:04.833" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220309 15:26:04.833" endtime="20220309 15:26:05.011"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalPasswordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:05.012" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password-field']'.</msg>
+<status status="PASS" starttime="20220309 15:26:05.012" endtime="20220309 15:26:05.143"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:05.143" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220309 15:26:05.143" endtime="20220309 15:26:05.244"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Web Security</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 15:26:05.246" endtime="20220309 15:26:06.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${myOrganization}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:06.274" level="INFO">Clicking element '//span[normalize-space()='My Organization']'.</msg>
+<status status="PASS" starttime="20220309 15:26:06.274" endtime="20220309 15:26:06.614"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 15:26:06.621" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 15:26:06.618" endtime="20220309 15:26:06.677"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enterLicenseKey}</arg>
+<arg>${licenseKey}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:06.678" level="INFO">Typing text '-----BEGIN LICENSE KEY-----L/+BAwEBB2xpY2Vuc2UB/4IAAQIBB1BheWxvYWQBCgABCVNpZ25hdHVyZQEKAAAA/gIp/4IB/gEe/gEbEAAHW111aW50OAr+AQ0A/gEJeyJmdWxsSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwic2VsZWN0aXZlSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwib3JnYW5pemF0aW9uIjoiTWFydmVsIFN0dWRpb3MiLCJmZWF0dXJlcyI6WyJjb3JlIl0sInNrdXMiOlsiUkJJRiIsIlJCSVMiXSwidXNhZ2UiOiJ0ZXN0IiwiZW5kRGF0ZSI6IjIwMjUtMTAtMDFUMDA6MDA6MDBaIiwic3RhcnREYXRlIjoiMjAyMS0xMC0wMVQwMDowMDowMFoiLCJvcmdhbml6YXRpb25FbWFpbCI6ImFkbWluQG1hcnZlbC5lbnQifQH+AQDQxvZcbQnH2iR8w/W4l/v12p2CKuLOorAWF4EKmEhKj8Af8AhMeQnLJIslw3yP1ryaKIg/o5WNoClxU+KrtSvqaeLH/GXe0h3aIY/XaA7G5fO6IGRslr4mEzu0FK+ndMBgyjqtIp9ha8Is06lvuy0OoXh96x+OnlAJ6oUZk6ZynJ2aDUQ5GAVcsWVgmNG7KwIbpqv5yo7deO9sHDlPW8KGnPfIEpjtZ57sZwdvGNgeRCLegAYA0/W4/ueCqq7RLw+eWyoiYtKP+iMx3StM1fYdT55lYFxLUJaPd4ni0+IGx2rkSTTqsiT2KmoDnZK3ojh1xvm+z+ABDnH2DLcj+KJtAA==-----END LICENSE KEY-----' into text field '//textarea[@id='key']'.</msg>
+<status status="PASS" starttime="20220309 15:26:06.678" endtime="20220309 15:26:12.325"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${updateButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:12.332" level="INFO">Clicking button '//input[@value='Update']'.</msg>
+<status status="PASS" starttime="20220309 15:26:12.331" endtime="20220309 15:26:12.563"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:13.565" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220309 15:26:12.563" endtime="20220309 15:26:13.565"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>The license key installation is successful</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 15:26:13.566" endtime="20220309 15:26:13.656"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:26:13.657" endtime="20220309 15:26:15.884"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:13.656" endtime="20220309 15:26:15.884"/>
+</kw>
+<status status="PASS" starttime="20220309 15:25:57.525" endtime="20220309 15:26:15.884"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:26:15.884" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:26:15.884" endtime="20220309 15:26:15.884"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:15.884" endtime="20220309 15:26:15.884"/>
+</kw>
+<doc>Add License Key Functionality</doc>
+<status status="PASS" starttime="20220309 15:25:57.509" endtime="20220309 15:26:15.884"/>
+</suite>
+<suite id="s1-s3-s2" name="createUser" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\createUser.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:26:15.899" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:26:15.899" endtime="20220309 15:26:15.899"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:15.899" endtime="20220309 15:26:15.899"/>
+</kw>
+<test id="s1-s3-s2-t1" name="Login to RBI Admin Portal">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 15:26:15.899" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.qa.cyberinc.com'.</msg>
+<status status="PASS" starttime="20220309 15:26:15.899" endtime="20220309 15:26:20.706"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 15:26:20.706" endtime="20220309 15:26:20.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:22.838" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:20.831" endtime="20220309 15:26:22.838"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:15.899" endtime="20220309 15:26:22.838"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220309 15:26:22.838" endtime="20220309 15:26:22.838"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_t}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220309 15:26:22.838" level="INFO">${default_t} = 20 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:22.838" endtime="20220309 15:26:22.838"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_t}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220309 15:26:22.838" endtime="20220309 15:26:22.838"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalUsernameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:22.838" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220309 15:26:22.838" endtime="20220309 15:26:22.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalPasswordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:22.989" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password-field']'.</msg>
+<status status="PASS" starttime="20220309 15:26:22.989" endtime="20220309 15:26:23.092"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:23.093" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220309 15:26:23.093" endtime="20220309 15:26:23.163"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Web Security</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 15:26:23.165" endtime="20220309 15:26:24.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:27.029" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:24.028" endtime="20220309 15:26:27.029"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UsersOption}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:27.031" level="INFO">Clicking element '//i[@class='feather icon-user']'.</msg>
+<status status="PASS" starttime="20220309 15:26:27.030" endtime="20220309 15:26:27.173"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:30.176" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220309 15:26:27.174" endtime="20220309 15:26:30.176"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Users</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 15:26:30.177" endtime="20220309 15:26:30.277"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${createNewUserButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:30.279" level="INFO">Clicking element '//i[@ng-reflect-ngb-tooltip='Create Forcepoint RBI User']'.</msg>
+<status status="PASS" starttime="20220309 15:26:30.279" endtime="20220309 15:26:30.487"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:31.489" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220309 15:26:30.488" endtime="20220309 15:26:31.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${displayName}</arg>
+<arg>User1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:31.490" level="INFO">Typing text 'User1' into text field '//input[@id='name']'.</msg>
+<status status="PASS" starttime="20220309 15:26:31.490" endtime="20220309 15:26:31.627"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernameEmail}</arg>
+<arg>User1@fp.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:31.629" level="INFO">Typing text 'User1@fp.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220309 15:26:31.627" endtime="20220309 15:26:31.798"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enterPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:31.799" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20220309 15:26:31.799" endtime="20220309 15:26:31.955"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${confirmPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:31.956" level="INFO">Typing text 'Admin@123' into text field '//input[@id='confirmPassword']'.</msg>
+<status status="PASS" starttime="20220309 15:26:31.956" endtime="20220309 15:26:32.179"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${enableUser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:32.180" level="INFO">Clicking element '//span[@class='switch switch-small']'.</msg>
+<status status="PASS" starttime="20220309 15:26:32.180" endtime="20220309 15:26:32.269"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,700)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 15:26:32.271" level="INFO">Executing JavaScript:
+window.scrollTo(0,700)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 15:26:32.270" endtime="20220309 15:26:32.278"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${userRole}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:32.280" level="INFO">Double clicking element '//label[@class='check-task custom-control custom-checkbox d-flex justify-content-center']//span[contains(text(),'User')]'.</msg>
+<status status="PASS" starttime="20220309 15:26:32.278" endtime="20220309 15:26:32.639"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 15:26:33.641" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220309 15:26:32.639" endtime="20220309 15:26:33.641"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${confirmButton}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:33.642" level="INFO">Double clicking element '//button[text()='Confirm']'.</msg>
+<status status="PASS" starttime="20220309 15:26:33.642" endtime="20220309 15:26:33.982"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${saveButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:33.983" level="INFO">Clicking button '//button[@type ='submit']'.</msg>
+<status status="PASS" starttime="20220309 15:26:33.982" endtime="20220309 15:26:34.161"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 15:26:34.163" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 15:26:34.162" endtime="20220309 15:26:34.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${deleteButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:34.171" level="INFO">Clicking element '//tr/td[contains(text(), 'User1')]/following-sibling::td/a[8]/i[1]'.</msg>
+<status status="PASS" starttime="20220309 15:26:34.170" endtime="20220309 15:26:34.408"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${confirmButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:34.409" level="INFO">Clicking button '//button[text()='Confirm']'.</msg>
+<status status="PASS" starttime="20220309 15:26:34.409" endtime="20220309 15:26:34.529"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${searchSpace}</arg>
+<arg>User1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 15:26:34.529" level="INFO">Typing text 'User1' into text field '//input[@type='search']'.</msg>
+<status status="PASS" starttime="20220309 15:26:34.529" endtime="20220309 15:26:34.692"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>User deleted successfully</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 15:26:34.693" endtime="20220309 15:26:34.781"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 15:26:34.783" endtime="20220309 15:26:36.984"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:34.782" endtime="20220309 15:26:36.984"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:15.899" endtime="20220309 15:26:36.984"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:26:36.984" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220309 15:26:36.984" endtime="20220309 15:26:36.984"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:36.984" endtime="20220309 15:26:36.984"/>
+</kw>
+<doc>Create New User Functionality</doc>
+<status status="PASS" starttime="20220309 15:26:15.884" endtime="20220309 15:26:36.984"/>
+</suite>
+<status status="PASS" starttime="20220309 15:25:57.509" endtime="20220309 15:26:36.984"/>
+</suite>
+<kw name="After each Test Suite" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220309 15:26:36.984" level="INFO">Test Suite Ended</msg>
+<status status="PASS" starttime="20220309 15:26:36.984" endtime="20220309 15:26:36.984"/>
+</kw>
+<status status="PASS" starttime="20220309 15:26:36.984" endtime="20220309 15:26:36.984"/>
+</kw>
+<status status="FAIL" starttime="20220309 15:24:42.929" endtime="20220309 15:26:36.984"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="2" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="CommonTC">TestCases.CommonTC</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="invalidLoginCases">TestCases.CommonTC.invalidLoginCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="Login">TestCases.CommonTC.Login</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s2" name="RACSideTC">TestCases.RACSideTC</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s1" name="DDL">TestCases.RACSideTC.DDL</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2-s2" name="downloadValidation">TestCases.RACSideTC.downloadValidation</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="RBIAdminPortalTC">TestCases.RBIAdminPortalTC</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3-s1" name="addLicenseKey">TestCases.RBIAdminPortalTC.addLicenseKey</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3-s2" name="createUser">TestCases.RBIAdminPortalTC.createUser</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220309 15:24:42.914" level="ERROR">Error in file 'C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\addLicenseKey.robot' on line 17: Non-existing setting 'Arguments'.</msg>
+<msg timestamp="20220309 15:24:43.336" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\invalidLoginCases.robot", line 0</msg>
+<msg timestamp="20220309 15:24:43.336" level="ERROR">In source file:
+  File "../TestData/invalidCredentials.csv", line 0</msg>
+<msg timestamp="20220309 15:24:43.336" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\../TestData/invalidCredentials.csv but file does not exist.</msg>
+</errors>
+</robot>
