@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220321 09:09:51.105" rpa="false" schemaversion="2">
+<suite id="s1" name="Login" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\login.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 09:09:51.496" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220321 09:09:51.496" endtime="20220321 09:09:51.496"/>
+</kw>
+<status status="PASS" starttime="20220321 09:09:51.496" endtime="20220321 09:09:51.496"/>
+</kw>
+<test id="s1-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 09:09:51.496" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=https://www.google.com'.</msg>
+<status status="PASS" starttime="20220321 09:09:51.496" endtime="20220321 09:09:53.449"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 09:09:53.450" endtime="20220321 09:09:53.568"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 09:09:55.581" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 09:09:53.569" endtime="20220321 09:09:55.581"/>
+</kw>
+<status status="PASS" starttime="20220321 09:09:51.496" endtime="20220321 09:09:55.581"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 09:09:55.581" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='login_username']'.</msg>
+<status status="PASS" starttime="20220321 09:09:55.581" endtime="20220321 09:09:55.727"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 09:09:55.728" level="INFO">Typing text 'Admin@123' into text field '//input[@id='login_pwd']'.</msg>
+<status status="PASS" starttime="20220321 09:09:55.728" endtime="20220321 09:09:55.833"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 09:09:55.834" level="INFO">Clicking button '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20220321 09:09:55.834" endtime="20220321 09:09:55.913"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 09:09:55.915" endtime="20220321 09:09:58.003"/>
+</kw>
+<status status="PASS" starttime="20220321 09:09:55.914" endtime="20220321 09:09:58.003"/>
+</kw>
+<status status="PASS" starttime="20220321 09:09:51.496" endtime="20220321 09:09:58.003"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 09:09:58.003" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220321 09:09:58.003" endtime="20220321 09:09:58.003"/>
+</kw>
+<status status="PASS" starttime="20220321 09:09:58.003" endtime="20220321 09:09:58.003"/>
+</kw>
+<doc>Login Functionality</doc>
+<status status="PASS" starttime="20220321 09:09:51.121" endtime="20220321 09:09:58.003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

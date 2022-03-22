@@ -8,6 +8,7 @@ loginButton = "//button[@id='login_submit']"
 username = "rajashri.borawake@forcepoint.com"
 password = "Admin@123"
 
+
 #RBI Admin Portal
 adminPortalUsernameField = "//input[@id='email']"
 adminPortalPasswordField = "//input[@id='password-field']"
@@ -49,7 +50,10 @@ pdfFile = "//main[@class='col-12 main-content rounded-bg marg-top padd-top']//di
 
 #Download From Outlook
 
-#Download From
+#Download From local website
+
+csvFile = "//button[text()='csv_5.90mb']"
+
 
 #Download From Outlook
 

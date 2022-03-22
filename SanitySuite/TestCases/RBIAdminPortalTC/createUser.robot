@@ -9,7 +9,7 @@ Suite Setup  Before Each Test Suite
 Suite Teardown  After Each Test Suite
 
 *** Variables ***
-${URL}  https://ccautomation.qa.cyberinc.com
+${URL}  https://ccautomation.rbi.qa.forcepoint.com
 ${Browser}  Chrome
 
 *** Test Cases ***

@@ -1,0 +1,2427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220321 07:24:44.484" rpa="false" schemaversion="2">
+<suite id="s1" name="TestCases" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases">
+<kw name="Before each Test Suite" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Test Suite Started</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:24:44.527" level="INFO">Test Suite Started</msg>
+<status status="PASS" starttime="20220321 07:24:44.527" endtime="20220321 07:24:44.527"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:44.527" endtime="20220321 07:24:44.527"/>
+</kw>
+<suite id="s1-s1" name="CommonTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC">
+<suite id="s1-s1-s1" name="Login" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\CommonTC\login.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:24:44.918" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:24:44.918" endtime="20220321 07:24:44.918"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:44.918" endtime="20220321 07:24:44.918"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:24:44.918" level="INFO">Opening browser 'headlesschrome' to base url 'https://ccautomation.qa.cyberinc.com/viewer/loader?tenantId=9bea9106-fcb1-4286-8edc-5e2ee1459131&amp;username=rb@fp.com&amp;url=https://www.google.com'.</msg>
+<msg timestamp="20220321 07:24:46.922" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220321 07:24:46.939" level="FAIL">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CD9943+2595139]
+	Ordinal0 [0x00C6C9F1+2148849]
+	Ordinal0 [0x00B64528+1066280]
+	Ordinal0 [0x00B60DB4+1052084]
+	Ordinal0 [0x00B563BD+1008573]
+	Ordinal0 [0x00B56F7C+1011580]
+	Ordinal0 [0x00B565CA+1009098]
+	Ordinal0 [0x00B55BC6+1006534]
+	Ordinal0 [0x00B54AD0+1002192]
+	Ordinal0 [0x00B54FAD+1003437]
+	Ordinal0 [0x00B65C4A+1072202]
+	Ordinal0 [0x00BBC19D+1425821]
+	Ordinal0 [0x00BAB9EC+1358316]
+	Ordinal0 [0x00BBBAF2+1424114]
+	Ordinal0 [0x00BAB806+1357830]
+	Ordinal0 [0x00B86086+1204358]
+	Ordinal0 [0x00B86F96+1208214]
+	GetHandleVerifier [0x00E7B232+1658114]
+	GetHandleVerifier [0x00F3312C+2411516]
+	GetHandleVerifier [0x00D6F261+560433]
+	GetHandleVerifier [0x00D6E366+556598]
+	Ordinal0 [0x00C7286B+2173035]
+	Ordinal0 [0x00C775F8+2192888]
+	Ordinal0 [0x00C776E5+2193125]
+	Ordinal0 [0x00C811FC+2232828]
+	BaseThreadInitThunk [0x76B86359+25]
+	RtlGetAppContainerNamedObjectPath [0x773E7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x773E7B44+180]
+</msg>
+<status status="FAIL" starttime="20220321 07:24:44.918" endtime="20220321 07:24:46.939"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:46.939" endtime="20220321 07:24:46.939"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:46.939" endtime="20220321 07:24:46.939"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:24:44.918" endtime="20220321 07:24:46.939"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:24:46.939" endtime="20220321 07:24:49.050"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:46.939" endtime="20220321 07:24:49.050"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:24:44.918" endtime="20220321 07:24:49.050">Setup failed:
+WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=99.0.4844.74)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00CD9943+2595139]
+	Ordinal0 [0x00C6C9F1+2148849]
+	Ordinal0 [0x00B64528+1066280]
+	Ordinal0 [0x00B60DB4+1052084]
+	Ordinal0 [0x00B563BD+1008573]
+	Ordinal0 [0x00B56F7C+1011580]
+	Ordinal0 [0x00B565CA+1009098]
+	Ordinal0 [0x00B55BC6+1006534]
+	Ordinal0 [0x00B54AD0+1002192]
+	Ordinal0 [0x00B54FAD+1003437]
+	Ordinal0 [0x00B65C4A+1072202]
+	Ordinal0 [0x00BBC19D+1425821]
+	Ordinal0 [0x00BAB9EC+1358316]
+	Ordinal0 [0x00BBBAF2+1424114]
+	Ordinal0 [0x00BAB806+1357830]
+	Ordinal0 [0x00B86086+1204358]
+	Ordinal0 [0x00B86F96+1208214]
+	GetHandleVerifier [0x00E7B232+1658114]
+	GetHandleVerifier [0x00F3312C+2411516]
+	GetHandleVerifier [0x00D6F261+560433]
+	GetHandleVerifier [0x00D6E366+556598]
+	Ordinal0 [0x00C7286B+2173035]
+	Ordinal0 [0x00C775F8+2192888]
+	Ordinal0 [0x00C776E5+2193125]
+	Ordinal0 [0x00C811FC+2232828]
+	BaseThreadInitThunk [0x76B86359+25]
+	RtlGetAppContainerNamedObjectPath [0x773E7B74+228]
+	RtlGetAppContainerNamedObjectPath [0x773E7B44+180]
+</status>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:24:49.050" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:24:49.050" endtime="20220321 07:24:49.050"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:49.050" endtime="20220321 07:24:49.050"/>
+</kw>
+<doc>Login Functionality</doc>
+<status status="FAIL" starttime="20220321 07:24:44.542" endtime="20220321 07:24:49.050"/>
+</suite>
+<status status="FAIL" starttime="20220321 07:24:44.527" endtime="20220321 07:24:49.050"/>
+</suite>
+<suite id="s1-s2" name="RACSideTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC">
+<suite id="s1-s2-s1" name="DDL" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\DDL.robot">
+<test id="s1-s2-s1-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:24:49.111" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'.</msg>
+<status status="PASS" starttime="20220321 07:24:49.111" endtime="20220321 07:24:51.109"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:24:51.109" endtime="20220321 07:24:51.259"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:24:53.268" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:24:51.259" endtime="20220321 07:24:53.268"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:49.111" endtime="20220321 07:24:53.268"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:24:54.277" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:24:53.268" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Input Text">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<msg timestamp="20220321 07:24:54.277" level="FAIL">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    SeleniumLibrary.Input Text
+    SikuliLibrary.Input Text</msg>
+<status status="FAIL" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Input Text">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${pdfFile}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/RAC Automation_RobotFramework/SanitySuite/SikuliImages</arg>
+<doc>Add image path</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>file.png</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>${fpLogoImg}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<status status="NOT RUN" starttime="20220321 07:24:54.277" endtime="20220321 07:24:54.277"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:24:54.277" endtime="20220321 07:24:56.488"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:54.277" endtime="20220321 07:24:56.488"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:24:49.111" endtime="20220321 07:24:56.488">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    SeleniumLibrary.Input Text
+    SikuliLibrary.Input Text</status>
+</test>
+<doc>Direct Download Link Functionality with Sikuli</doc>
+<status status="FAIL" starttime="20220321 07:24:49.064" endtime="20220321 07:24:56.488"/>
+</suite>
+<suite id="s1-s2-s2" name="downloadFromWeb" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\downloadFromWeb.robot">
+<test id="s1-s2-s2-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:24:56.503" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=http://203.115.112.227/up-down/'.</msg>
+<status status="PASS" starttime="20220321 07:24:56.503" endtime="20220321 07:24:58.366"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:24:58.366" endtime="20220321 07:24:58.499"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:00.509" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:24:58.500" endtime="20220321 07:25:00.509"/>
+</kw>
+<status status="PASS" starttime="20220321 07:24:56.503" endtime="20220321 07:25:00.509"/>
+</kw>
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220321 07:25:00.509" level="INFO">Starting process:
+java -jar "c:\rac automation_robotframework\sanitysuite\venv\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar" 64297 "C:\RAC Automation_RobotFramework\SanitySuite"</msg>
+<msg timestamp="20220321 07:25:00.509" level="INFO">Start sikuli java process on port 64297</msg>
+<msg timestamp="20220321 07:25:02.677" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220321 07:25:00.509" endtime="20220321 07:25:05.221"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/RAC Automation_RobotFramework/SanitySuite/SikuliImages/downloadFromWeb</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220321 07:25:05.221" endtime="20220321 07:25:05.251"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:06.254" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:25:05.251" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Input Text">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<msg timestamp="20220321 07:25:06.254" level="FAIL">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    SeleniumLibrary.Input Text
+    SikuliLibrary.Input Text</msg>
+<status status="FAIL" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Input Text">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${csvFile}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>csv_5.90mb.csv</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<arg>${downloadedCSVFile}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:06.254" endtime="20220321 07:25:06.254"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:25:06.254" endtime="20220321 07:25:09.728"/>
+</kw>
+<status status="PASS" starttime="20220321 07:25:06.254" endtime="20220321 07:25:09.728"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:24:56.503" endtime="20220321 07:25:09.728">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    SeleniumLibrary.Input Text
+    SikuliLibrary.Input Text</status>
+</test>
+<doc>Download Diffrent File Formats from Local Website</doc>
+<status status="FAIL" starttime="20220321 07:24:56.488" endtime="20220321 07:25:09.728"/>
+</suite>
+<suite id="s1-s2-s3" name="downloadValidation" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\downloadValidation.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:25:09.758" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:25:09.758" endtime="20220321 07:25:09.758"/>
+</kw>
+<status status="PASS" starttime="20220321 07:25:09.758" endtime="20220321 07:25:09.758"/>
+</kw>
+<test id="s1-s2-s3-t1" name="Download PDF">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:25:09.758" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'.</msg>
+<status status="PASS" starttime="20220321 07:25:09.758" endtime="20220321 07:25:12.041"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:25:12.041" endtime="20220321 07:25:12.166"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:25:12.166" endtime="20220321 07:25:14.184"/>
+</kw>
+<status status="PASS" starttime="20220321 07:25:09.758" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Get Time" library="BuiltIn">
+<var>${now}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">${now} = 1647847514</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${download directory}</var>
+<arg>${OUTPUT DIR}</arg>
+<arg>downloads_${now}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">${download directory} = C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<arg>${download directory}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO" html="true">Created directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${chrome options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">${chrome options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001E2F2E07A00&gt;</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>${disabled}</var>
+<arg>Chrome PDF Viewer</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">${disabled} = ['Chrome PDF Viewer']</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${prefs}</var>
+<arg>download.default_directory=${download directory}</arg>
+<arg>plugins.plugins_disabled=${disabled}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20220321 07:25:14.184" level="INFO">${prefs} = {'download.default_directory': 'C:\\RAC Automation_RobotFramework\\SanitySuite\\downloads_1647847514', 'plugins.plugins_disabled': ['Chrome PDF Viewer']}</msg>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>headless</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>to_capabilities</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-notifications</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-infobars</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20220321 07:25:14.184" endtime="20220321 07:25:14.184"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220321 07:25:14.199" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220321 07:25:14.199" endtime="20220321 07:25:15.514"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20220321 07:25:15.514" endtime="20220321 07:25:15.548"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL1}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220321 07:25:15.550" level="INFO">Opening url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'</msg>
+<status status="PASS" starttime="20220321 07:25:15.549" endtime="20220321 07:25:16.172"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:18.174" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:25:16.174" endtime="20220321 07:25:18.174"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:25:18.174" endtime="20220321 07:25:18.300"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:20.323" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:25:18.300" endtime="20220321 07:25:20.323"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:25:20.323" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='login_username']'.</msg>
+<status status="PASS" starttime="20220321 07:25:20.323" endtime="20220321 07:25:20.692"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:25:20.696" level="INFO">Typing text 'Admin@123' into text field '//input[@id='login_pwd']'.</msg>
+<status status="PASS" starttime="20220321 07:25:20.692" endtime="20220321 07:25:20.932"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:25:20.935" level="INFO">Clicking button '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20220321 07:25:20.933" endtime="20220321 07:25:21.072"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:26.092" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220321 07:25:21.073" endtime="20220321 07:25:26.092"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 07:25:26.092" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 07:25:26.092" endtime="20220321 07:25:26.107"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:25:27.121" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:25:26.108" endtime="20220321 07:25:27.121"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${pdfFile}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220321 07:25:27.121" level="INFO">Clicking link '//main[@class='col-12 main-content rounded-bg marg-top padd-top']//div[1]//a[1]'.</msg>
+<status status="PASS" starttime="20220321 07:25:27.121" endtime="20220321 07:25:27.188"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<var>${file}</var>
+<arg>1 min</arg>
+<arg>2 sec</arg>
+<arg>Download should be done</arg>
+<arg>${download directory}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:27.190" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:27.190" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:27.190" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:27.190" endtime="20220321 07:25:27.190"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:27.190" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:27.193" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:27.190" endtime="20220321 07:25:27.193"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:27.193" endtime="20220321 07:25:27.193"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:27.193" endtime="20220321 07:25:27.193"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:27.193" endtime="20220321 07:25:27.193"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:27.190" endtime="20220321 07:25:27.195"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:29.199" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:29.200" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:29.200" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:29.199" endtime="20220321 07:25:29.200"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:29.201" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:29.202" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:29.200" endtime="20220321 07:25:29.202"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:29.202" endtime="20220321 07:25:29.203"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:29.203" endtime="20220321 07:25:29.203"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:29.203" endtime="20220321 07:25:29.203"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:29.196" endtime="20220321 07:25:29.205"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:31.207" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:31.207" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:31.207" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:31.207" endtime="20220321 07:25:31.207"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:31.207" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:31.207" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:31.207" endtime="20220321 07:25:31.207"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:31.212" endtime="20220321 07:25:31.212"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:31.212" endtime="20220321 07:25:31.212"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:31.213" endtime="20220321 07:25:31.213"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:31.206" endtime="20220321 07:25:31.213"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:33.218" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:33.218" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:33.218" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:33.217" endtime="20220321 07:25:33.219"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:33.220" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:33.220" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:33.219" endtime="20220321 07:25:33.220"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:33.222" endtime="20220321 07:25:33.222"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:33.222" endtime="20220321 07:25:33.222"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:33.222" endtime="20220321 07:25:33.222"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:33.215" endtime="20220321 07:25:33.223"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:35.226" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:35.227" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:35.227" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:35.226" endtime="20220321 07:25:35.227"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:35.228" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:35.228" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:35.227" endtime="20220321 07:25:35.228"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:35.229" endtime="20220321 07:25:35.229"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:35.229" endtime="20220321 07:25:35.229"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:35.229" endtime="20220321 07:25:35.229"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:35.225" endtime="20220321 07:25:35.230"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:37.233" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:37.234" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:37.234" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:37.233" endtime="20220321 07:25:37.234"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:37.235" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:37.236" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:37.234" endtime="20220321 07:25:37.236"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:37.236" endtime="20220321 07:25:37.236"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:37.236" endtime="20220321 07:25:37.236"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:37.237" endtime="20220321 07:25:37.237"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:37.232" endtime="20220321 07:25:37.237"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:39.241" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:39.241" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:39.241" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:39.240" endtime="20220321 07:25:39.241"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:39.242" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:39.242" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:39.242" endtime="20220321 07:25:39.243"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:39.243" endtime="20220321 07:25:39.243"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:39.243" endtime="20220321 07:25:39.243"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:39.243" endtime="20220321 07:25:39.243"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:39.239" endtime="20220321 07:25:39.244"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:41.249" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:41.249" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:41.249" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:41.249" endtime="20220321 07:25:41.249"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:41.250" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:41.250" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:41.249" endtime="20220321 07:25:41.250"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:41.250" endtime="20220321 07:25:41.250"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:41.251" endtime="20220321 07:25:41.251"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:41.251" endtime="20220321 07:25:41.251"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:41.246" endtime="20220321 07:25:41.251"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:43.254" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:43.255" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:43.256" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:43.253" endtime="20220321 07:25:43.256"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:43.256" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:43.257" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:43.256" endtime="20220321 07:25:43.257"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:43.257" endtime="20220321 07:25:43.257"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:43.257" endtime="20220321 07:25:43.257"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:43.258" endtime="20220321 07:25:43.258"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:43.252" endtime="20220321 07:25:43.258"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:45.262" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:45.262" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:45.263" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:45.261" endtime="20220321 07:25:45.263"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:45.264" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:45.264" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:45.263" endtime="20220321 07:25:45.264"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:45.264" endtime="20220321 07:25:45.265"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:45.265" endtime="20220321 07:25:45.265"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:45.265" endtime="20220321 07:25:45.265"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:45.260" endtime="20220321 07:25:45.265"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:47.267" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:47.268" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:47.268" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:47.267" endtime="20220321 07:25:47.268"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:47.268" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:47.269" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:47.268" endtime="20220321 07:25:47.269"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:47.269" endtime="20220321 07:25:47.269"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:47.269" endtime="20220321 07:25:47.269"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:47.269" endtime="20220321 07:25:47.270"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:47.266" endtime="20220321 07:25:47.270"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:49.273" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:49.273" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:49.273" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:49.272" endtime="20220321 07:25:49.273"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:49.273" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:49.274" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:49.273" endtime="20220321 07:25:49.274"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:49.274" endtime="20220321 07:25:49.274"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:49.274" endtime="20220321 07:25:49.274"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:49.274" endtime="20220321 07:25:49.274"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:49.271" endtime="20220321 07:25:49.275"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:51.278" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:51.279" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:51.280" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:51.277" endtime="20220321 07:25:51.280"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:51.280" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:51.281" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:51.280" endtime="20220321 07:25:51.281"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:51.282" endtime="20220321 07:25:51.282"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:51.282" endtime="20220321 07:25:51.282"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:51.282" endtime="20220321 07:25:51.282"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:51.276" endtime="20220321 07:25:51.283"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:53.287" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:53.288" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:53.288" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:53.286" endtime="20220321 07:25:53.288"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:53.289" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:53.289" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:53.288" endtime="20220321 07:25:53.289"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:53.290" endtime="20220321 07:25:53.290"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:53.290" endtime="20220321 07:25:53.290"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:53.291" endtime="20220321 07:25:53.291"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:53.284" endtime="20220321 07:25:53.292"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:55.295" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:55.295" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:55.296" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:55.293" endtime="20220321 07:25:55.296"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:55.296" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:55.297" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:55.296" endtime="20220321 07:25:55.297"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:55.297" endtime="20220321 07:25:55.297"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:55.298" endtime="20220321 07:25:55.298"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:55.298" endtime="20220321 07:25:55.298"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:55.292" endtime="20220321 07:25:55.298"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:57.300" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:57.301" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:57.302" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:57.300" endtime="20220321 07:25:57.302"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:57.302" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:57.303" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:57.302" endtime="20220321 07:25:57.303"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:57.303" endtime="20220321 07:25:57.303"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:57.303" endtime="20220321 07:25:57.303"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:57.304" endtime="20220321 07:25:57.304"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:57.299" endtime="20220321 07:25:57.304"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:25:59.307" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:25:59.307" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:25:59.308" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:25:59.306" endtime="20220321 07:25:59.308"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:25:59.308" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:25:59.309" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:59.308" endtime="20220321 07:25:59.309"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:59.309" endtime="20220321 07:25:59.309"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:59.309" endtime="20220321 07:25:59.309"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:25:59.309" endtime="20220321 07:25:59.310"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:59.305" endtime="20220321 07:25:59.310"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:01.314" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:01.315" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:01.315" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:01.313" endtime="20220321 07:26:01.315"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:01.316" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:01.317" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:01.316" endtime="20220321 07:26:01.317"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:01.317" endtime="20220321 07:26:01.317"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:01.317" endtime="20220321 07:26:01.317"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:01.317" endtime="20220321 07:26:01.317"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:01.312" endtime="20220321 07:26:01.318"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:03.320" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:03.321" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:03.321" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:03.320" endtime="20220321 07:26:03.321"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:03.322" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:03.322" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:03.321" endtime="20220321 07:26:03.322"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:03.323" endtime="20220321 07:26:03.323"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:03.323" endtime="20220321 07:26:03.323"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:03.323" endtime="20220321 07:26:03.323"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:03.319" endtime="20220321 07:26:03.323"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:05.325" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:05.325" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:05.325" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:05.324" endtime="20220321 07:26:05.325"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:05.326" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:05.326" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:05.325" endtime="20220321 07:26:05.326"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:05.327" endtime="20220321 07:26:05.327"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:05.327" endtime="20220321 07:26:05.327"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:05.327" endtime="20220321 07:26:05.327"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:05.323" endtime="20220321 07:26:05.328"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:07.332" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:07.332" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:07.332" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:07.331" endtime="20220321 07:26:07.332"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:07.333" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:07.334" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:07.333" endtime="20220321 07:26:07.334"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:07.335" endtime="20220321 07:26:07.335"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:07.335" endtime="20220321 07:26:07.335"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:07.335" endtime="20220321 07:26:07.335"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:07.330" endtime="20220321 07:26:07.336"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:09.337" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:09.337" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:09.338" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:09.337" endtime="20220321 07:26:09.338"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:09.338" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:09.339" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:09.338" endtime="20220321 07:26:09.339"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:09.339" endtime="20220321 07:26:09.339"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:09.339" endtime="20220321 07:26:09.339"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:09.340" endtime="20220321 07:26:09.340"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:09.336" endtime="20220321 07:26:09.340"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:11.343" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:11.343" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:11.344" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:11.342" endtime="20220321 07:26:11.344"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:11.345" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:11.346" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:11.344" endtime="20220321 07:26:11.347"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:11.347" endtime="20220321 07:26:11.347"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:11.347" endtime="20220321 07:26:11.347"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:11.347" endtime="20220321 07:26:11.347"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:11.341" endtime="20220321 07:26:11.348"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:13.351" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:13.351" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:13.351" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:13.350" endtime="20220321 07:26:13.351"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:13.352" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:13.353" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:13.352" endtime="20220321 07:26:13.353"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:13.353" endtime="20220321 07:26:13.353"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:13.354" endtime="20220321 07:26:13.354"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:13.354" endtime="20220321 07:26:13.354"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:13.349" endtime="20220321 07:26:13.355"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:15.358" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:15.359" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:15.360" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:15.358" endtime="20220321 07:26:15.360"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:15.360" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:15.360" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:15.360" endtime="20220321 07:26:15.360"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:15.362" endtime="20220321 07:26:15.362"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:15.362" endtime="20220321 07:26:15.362"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:15.362" endtime="20220321 07:26:15.362"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:15.356" endtime="20220321 07:26:15.363"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:17.364" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:17.366" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:17.366" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:17.364" endtime="20220321 07:26:17.366"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:17.367" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:17.368" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:17.366" endtime="20220321 07:26:17.368"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:17.368" endtime="20220321 07:26:17.369"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:17.369" endtime="20220321 07:26:17.369"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:17.369" endtime="20220321 07:26:17.369"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:17.364" endtime="20220321 07:26:17.370"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:19.372" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:19.373" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:19.373" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:19.372" endtime="20220321 07:26:19.373"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:19.373" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:19.374" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:19.373" endtime="20220321 07:26:19.374"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:19.374" endtime="20220321 07:26:19.374"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:19.374" endtime="20220321 07:26:19.374"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:19.374" endtime="20220321 07:26:19.374"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:19.371" endtime="20220321 07:26:19.375"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:21.379" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:21.379" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:21.379" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:21.377" endtime="20220321 07:26:21.381"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:21.381" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:21.381" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:21.381" endtime="20220321 07:26:21.381"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:21.381" endtime="20220321 07:26:21.381"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:21.381" endtime="20220321 07:26:21.381"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:21.381" endtime="20220321 07:26:21.381"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:21.376" endtime="20220321 07:26:21.381"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:23.382" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:23.384" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:23.384" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:23.382" endtime="20220321 07:26:23.384"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:23.384" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:23.385" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:23.384" endtime="20220321 07:26:23.385"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:23.385" endtime="20220321 07:26:23.385"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:23.385" endtime="20220321 07:26:23.386"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:23.386" endtime="20220321 07:26:23.386"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:23.382" endtime="20220321 07:26:23.386"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:25.387" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:25.387" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:25.387" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:25.387" endtime="20220321 07:26:25.387"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:25.387" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:25.387" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:25.387" endtime="20220321 07:26:25.387"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:25.391" endtime="20220321 07:26:25.391"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:25.391" endtime="20220321 07:26:25.391"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:25.391" endtime="20220321 07:26:25.391"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:25.387" endtime="20220321 07:26:25.391"/>
+</kw>
+<kw name="Download should be done">
+<arg>${download directory}</arg>
+<doc>Verifies that the directory has only one folder and it is not a temp file.</doc>
+<kw name="List Files In Directory" library="OperatingSystem">
+<var>${files}</var>
+<arg>${directory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<msg timestamp="20220321 07:26:27.394" level="INFO" html="true">Listing contents of directory '&lt;a href="file://C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514"&gt;C:\RAC Automation_RobotFramework\SanitySuite\downloads_1647847514&lt;/a&gt;'.</msg>
+<msg timestamp="20220321 07:26:27.395" level="INFO">0 files:
+</msg>
+<msg timestamp="20220321 07:26:27.395" level="INFO">${files} = []</msg>
+<status status="PASS" starttime="20220321 07:26:27.393" endtime="20220321 07:26:27.395"/>
+</kw>
+<kw name="Length Should Be" library="BuiltIn">
+<arg>${files}</arg>
+<arg>1</arg>
+<arg>Should be only one file in the download folder</arg>
+<doc>Verifies that the length of the given item is correct.</doc>
+<msg timestamp="20220321 07:26:27.396" level="INFO">Length is 0</msg>
+<msg timestamp="20220321 07:26:27.397" level="FAIL">Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:26:27.395" endtime="20220321 07:26:27.397"/>
+</kw>
+<kw name="Should Not Match Regexp" library="BuiltIn">
+<arg>${files[0]}</arg>
+<arg>(?i).*\\.tmp</arg>
+<arg>Chrome is still downloading a file</arg>
+<doc>Fails if ``string`` matches ``pattern`` as a regular expression.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:27.397" endtime="20220321 07:26:27.397"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${file}</var>
+<arg>${directory}</arg>
+<arg>${files[0]}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:27.398" endtime="20220321 07:26:27.398"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>File was successfully downloaded to ${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:27.399" endtime="20220321 07:26:27.399"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:27.392" endtime="20220321 07:26:27.400"/>
+</kw>
+<msg timestamp="20220321 07:26:27.400" level="FAIL">Keyword 'Download should be done' failed after retrying for 1 minute. The last error was: Should be only one file in the download folder</msg>
+<status status="FAIL" starttime="20220321 07:25:27.189" endtime="20220321 07:26:27.400"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:26:27.403" endtime="20220321 07:26:29.523"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:27.402" endtime="20220321 07:26:29.523"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:25:09.758" endtime="20220321 07:26:29.523">Keyword 'Download should be done' failed after retrying for 1 minute. The last error was: Should be only one file in the download folder</status>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:26:29.523" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:26:29.523" endtime="20220321 07:26:29.523"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:29.523" endtime="20220321 07:26:29.523"/>
+</kw>
+<doc>Direct Download File Validation Functionality</doc>
+<status status="FAIL" starttime="20220321 07:25:09.728" endtime="20220321 07:26:29.523"/>
+</suite>
+<suite id="s1-s2-s4" name="testSikuli" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RACSideTC\testSikuli.robot">
+<test id="s1-s2-s4-t1" name="Start and Close browser">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:26:29.539" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com/viewer/loader?tenantId=85752e70-2693-4db6-b169-87f2d871aea5&amp;username=rb@fp.com&amp;url=https://filesamples.com/formats/pdf'.</msg>
+<status status="PASS" starttime="20220321 07:26:29.539" endtime="20220321 07:26:31.692"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:26:31.692" endtime="20220321 07:26:31.832"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:26:33.853" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:26:31.832" endtime="20220321 07:26:33.853"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:29.539" endtime="20220321 07:26:33.853"/>
+</kw>
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220321 07:26:33.853" level="INFO">Starting process:
+java -jar "c:\rac automation_robotframework\sanitysuite\venv\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar" 64400 "C:\RAC Automation_RobotFramework\SanitySuite"</msg>
+<msg timestamp="20220321 07:26:33.853" level="INFO">Start sikuli java process on port 64400</msg>
+<msg timestamp="20220321 07:26:35.094" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220321 07:26:33.853" endtime="20220321 07:26:37.435"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/RAC Automation_RobotFramework/SanitySuite/SikuliImages</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220321 07:26:37.435" endtime="20220321 07:26:37.467"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:26:39.482" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:26:37.467" endtime="20220321 07:26:39.482"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 07:26:39.482" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 07:26:39.482" endtime="20220321 07:26:39.482"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:26:40.507" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:26:39.482" endtime="20220321 07:26:40.507"/>
+</kw>
+<kw name="Click If Exists">
+<arg>./closeAd.png</arg>
+<arg>${2}</arg>
+<kw name="Exists" library="SikuliLibrary">
+<var>${exists}</var>
+<arg>${image}</arg>
+<arg>${timeout}</arg>
+<doc>Exists</doc>
+<msg timestamp="20220321 07:26:42.893" level="INFO">[error] ImagePath: find: not there: ./closeAd.png</msg>
+<msg timestamp="20220321 07:26:42.893" level="INFO">${exists} = False</msg>
+<status status="PASS" starttime="20220321 07:26:40.507" endtime="20220321 07:26:42.893"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>"${exists}"=="true"</arg>
+<arg>Click</arg>
+<arg>${image}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20220321 07:26:42.893" endtime="20220321 07:26:42.893"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:40.507" endtime="20220321 07:26:42.893"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>samplePDF.png</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220321 07:26:53.618" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1647847613414.png'/&gt;</msg>
+<msg timestamp="20220321 07:26:53.618" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(samplePDF.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220321 07:26:42.893" endtime="20220321 07:26:53.618"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${pdfFile}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:53.618" endtime="20220321 07:26:53.618"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:53.618" endtime="20220321 07:26:53.618"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220321 07:26:53.618" endtime="20220321 07:26:53.618"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="SikuliLibrary">
+<arg>downloadedPdfFile.png</arg>
+<arg>10</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" starttime="20220321 07:26:53.618" endtime="20220321 07:26:53.618"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:26:53.618" endtime="20220321 07:26:55.805"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:53.618" endtime="20220321 07:26:55.805"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:26:29.539" endtime="20220321 07:26:55.805">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happened, could not find P(samplePDF.png) S: 0.699999988079071</status>
+</test>
+<doc>Direct Download Link Functionality with Sikuli</doc>
+<status status="FAIL" starttime="20220321 07:26:29.523" endtime="20220321 07:26:55.805"/>
+</suite>
+<status status="FAIL" starttime="20220321 07:24:49.050" endtime="20220321 07:26:55.805"/>
+</suite>
+<suite id="s1-s3" name="RBIAdminPortalTC" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC">
+<suite id="s1-s3-s1" name="addLicenseKey" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\addLicenseKey.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:26:55.821" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:26:55.821" endtime="20220321 07:26:55.821"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:55.821" endtime="20220321 07:26:55.821"/>
+</kw>
+<test id="s1-s3-s1-t1" name="Add Products License Key">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:26:55.821" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com'.</msg>
+<status status="PASS" starttime="20220321 07:26:55.821" endtime="20220321 07:27:01.062"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:27:01.062" endtime="20220321 07:27:01.198"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:03.199" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:01.198" endtime="20220321 07:27:03.199"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:55.821" endtime="20220321 07:27:03.199"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220321 07:27:03.202" endtime="20220321 07:27:03.208"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_t}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220321 07:27:03.209" level="INFO">${default_t} = 20 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:03.209" endtime="20220321 07:27:03.209"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_t}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220321 07:27:03.209" endtime="20220321 07:27:03.211"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalUsernameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:03.213" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220321 07:27:03.211" endtime="20220321 07:27:03.437"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalPasswordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:03.439" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password-field']'.</msg>
+<status status="PASS" starttime="20220321 07:27:03.438" endtime="20220321 07:27:03.581"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:03.582" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220321 07:27:03.582" endtime="20220321 07:27:03.689"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Web Security</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 07:27:03.691" endtime="20220321 07:27:04.873"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${myOrganization}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:04.873" level="INFO">Clicking element '//span[normalize-space()='My Organization']'.</msg>
+<status status="PASS" starttime="20220321 07:27:04.873" endtime="20220321 07:27:05.327"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 07:27:05.329" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 07:27:05.327" endtime="20220321 07:27:06.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enterLicenseKey}</arg>
+<arg>${licenseKey}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:06.335" level="INFO">Typing text '-----BEGIN LICENSE KEY-----L/+BAwEBB2xpY2Vuc2UB/4IAAQIBB1BheWxvYWQBCgABCVNpZ25hdHVyZQEKAAAA/gIp/4IB/gEe/gEbEAAHW111aW50OAr+AQ0A/gEJeyJmdWxsSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwic2VsZWN0aXZlSXNvbGF0aW9uVXNlckNvdW50Ijo1MDAwMCwib3JnYW5pemF0aW9uIjoiTWFydmVsIFN0dWRpb3MiLCJmZWF0dXJlcyI6WyJjb3JlIl0sInNrdXMiOlsiUkJJRiIsIlJCSVMiXSwidXNhZ2UiOiJ0ZXN0IiwiZW5kRGF0ZSI6IjIwMjUtMTAtMDFUMDA6MDA6MDBaIiwic3RhcnREYXRlIjoiMjAyMS0xMC0wMVQwMDowMDowMFoiLCJvcmdhbml6YXRpb25FbWFpbCI6ImFkbWluQG1hcnZlbC5lbnQifQH+AQDQxvZcbQnH2iR8w/W4l/v12p2CKuLOorAWF4EKmEhKj8Af8AhMeQnLJIslw3yP1ryaKIg/o5WNoClxU+KrtSvqaeLH/GXe0h3aIY/XaA7G5fO6IGRslr4mEzu0FK+ndMBgyjqtIp9ha8Is06lvuy0OoXh96x+OnlAJ6oUZk6ZynJ2aDUQ5GAVcsWVgmNG7KwIbpqv5yo7deO9sHDlPW8KGnPfIEpjtZ57sZwdvGNgeRCLegAYA0/W4/ueCqq7RLw+eWyoiYtKP+iMx3StM1fYdT55lYFxLUJaPd4ni0+IGx2rkSTTqsiT2KmoDnZK3ojh1xvm+z+ABDnH2DLcj+KJtAA==-----END LICENSE KEY-----' into text field '//textarea[@id='key']'.</msg>
+<status status="PASS" starttime="20220321 07:27:06.335" endtime="20220321 07:27:10.776"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${updateButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:10.804" level="INFO">Clicking button '//input[@value='Update']'.</msg>
+<status status="PASS" starttime="20220321 07:27:10.804" endtime="20220321 07:27:11.000"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:12.004" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:27:11.003" endtime="20220321 07:27:12.004"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>The license key installation is successful</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 07:27:12.005" endtime="20220321 07:27:12.089"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:27:12.089" endtime="20220321 07:27:14.262"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:12.089" endtime="20220321 07:27:14.262"/>
+</kw>
+<status status="PASS" starttime="20220321 07:26:55.821" endtime="20220321 07:27:14.262"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:27:14.262" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:27:14.262" endtime="20220321 07:27:14.262"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:14.262" endtime="20220321 07:27:14.262"/>
+</kw>
+<doc>Add License Key Functionality</doc>
+<status status="PASS" starttime="20220321 07:26:55.805" endtime="20220321 07:27:14.262"/>
+</suite>
+<suite id="s1-s3-s2" name="createUser" source="C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\createUser.robot">
+<kw name="Before Each Test Suite" library="setup_teardown" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>Before Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:27:14.292" level="INFO">Before Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:27:14.292" endtime="20220321 07:27:14.292"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:14.292" endtime="20220321 07:27:14.292"/>
+</kw>
+<test id="s1-s3-s2-t1" name="Login to RBI Admin Portal">
+<kw name="Start Browser and Maximize" library="setup_teardown" type="SETUP">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220321 07:27:14.292" level="INFO">Opening browser 'Chrome' to base url 'https://ccautomation.rbi.qa.forcepoint.com'.</msg>
+<status status="PASS" starttime="20220321 07:27:14.292" endtime="20220321 07:27:19.758"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220321 07:27:19.758" endtime="20220321 07:27:19.892"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:21.900" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:19.892" endtime="20220321 07:27:21.900"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:14.292" endtime="20220321 07:27:21.900"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220321 07:27:21.900" endtime="20220321 07:27:21.900"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${default_t}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20220321 07:27:21.900" level="INFO">${default_t} = 20 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:21.900" endtime="20220321 07:27:21.900"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${default_t}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220321 07:27:21.900" endtime="20220321 07:27:21.900"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalUsernameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:21.900" level="INFO">Typing text 'rajashri.borawake@forcepoint.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220321 07:27:21.900" endtime="20220321 07:27:22.178"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${adminPortalPasswordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:22.181" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password-field']'.</msg>
+<status status="PASS" starttime="20220321 07:27:22.178" endtime="20220321 07:27:22.336"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${signInButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:22.337" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220321 07:27:22.337" endtime="20220321 07:27:22.455"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Web Security</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 07:27:22.456" endtime="20220321 07:27:23.889"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:26.917" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:23.891" endtime="20220321 07:27:26.917"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UsersOption}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:26.917" level="INFO">Clicking element '//i[@class='feather icon-user']'.</msg>
+<status status="PASS" starttime="20220321 07:27:26.917" endtime="20220321 07:27:27.065"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:30.082" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220321 07:27:27.068" endtime="20220321 07:27:30.082"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Users</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 07:27:30.082" endtime="20220321 07:27:30.192"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${createNewUserButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:30.192" level="INFO">Clicking element '//i[@ng-reflect-ngb-tooltip='Create Forcepoint RBI User']'.</msg>
+<status status="PASS" starttime="20220321 07:27:30.192" endtime="20220321 07:27:30.399"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:31.422" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:27:30.400" endtime="20220321 07:27:31.422"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${displayName}</arg>
+<arg>User1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:31.422" level="INFO">Typing text 'User1' into text field '//input[@id='name']'.</msg>
+<status status="PASS" starttime="20220321 07:27:31.422" endtime="20220321 07:27:31.569"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernameEmail}</arg>
+<arg>User1@fp.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:31.571" level="INFO">Typing text 'User1@fp.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20220321 07:27:31.570" endtime="20220321 07:27:31.728"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${enterPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:31.730" level="INFO">Typing text 'Admin@123' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20220321 07:27:31.729" endtime="20220321 07:27:31.911"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${confirmPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:31.913" level="INFO">Typing text 'Admin@123' into text field '//input[@id='confirmPassword']'.</msg>
+<status status="PASS" starttime="20220321 07:27:31.911" endtime="20220321 07:27:32.162"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${enableUser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:32.164" level="INFO">Clicking element '//span[@class='switch switch-small']'.</msg>
+<status status="PASS" starttime="20220321 07:27:32.163" endtime="20220321 07:27:32.263"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,700)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 07:27:32.265" level="INFO">Executing JavaScript:
+window.scrollTo(0,700)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 07:27:32.264" endtime="20220321 07:27:32.274"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${userRole}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:32.276" level="INFO">Double clicking element '//label[@class='check-task custom-control custom-checkbox d-flex justify-content-center']//span[contains(text(),'User')]'.</msg>
+<status status="PASS" starttime="20220321 07:27:32.274" endtime="20220321 07:27:32.651"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220321 07:27:33.673" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220321 07:27:32.651" endtime="20220321 07:27:33.673"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>${confirmButton}</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:33.673" level="INFO">Double clicking element '//button[text()='Confirm']'.</msg>
+<status status="PASS" starttime="20220321 07:27:33.673" endtime="20220321 07:27:34.027"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${saveButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:34.030" level="INFO">Clicking button '//button[@type ='submit']'.</msg>
+<status status="PASS" starttime="20220321 07:27:34.029" endtime="20220321 07:27:34.208"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220321 07:27:34.210" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220321 07:27:34.209" endtime="20220321 07:27:34.221"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${deleteButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:34.223" level="INFO">Clicking element '//tr/td[contains(text(), 'User1')]/following-sibling::td/a[8]/i[1]'.</msg>
+<status status="PASS" starttime="20220321 07:27:34.223" endtime="20220321 07:27:34.514"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${confirmButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:34.516" level="INFO">Clicking button '//button[text()='Confirm']'.</msg>
+<status status="PASS" starttime="20220321 07:27:34.516" endtime="20220321 07:27:34.648"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${searchSpace}</arg>
+<arg>User1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220321 07:27:34.650" level="INFO">Typing text 'User1' into text field '//input[@type='search']'.</msg>
+<status status="PASS" starttime="20220321 07:27:34.649" endtime="20220321 07:27:34.871"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>User deleted successfully</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220321 07:27:34.872" endtime="20220321 07:27:34.960"/>
+</kw>
+<kw name="Close Browser Window" library="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220321 07:27:34.960" endtime="20220321 07:27:37.168"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:34.960" endtime="20220321 07:27:37.168"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:14.292" endtime="20220321 07:27:37.168"/>
+</test>
+<kw name="After Each Test Suite" library="setup_teardown" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>After Each Test Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:27:37.168" level="INFO">After Each Test Suite</msg>
+<status status="PASS" starttime="20220321 07:27:37.168" endtime="20220321 07:27:37.168"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:37.168" endtime="20220321 07:27:37.168"/>
+</kw>
+<doc>Create New User Functionality</doc>
+<status status="PASS" starttime="20220321 07:27:14.262" endtime="20220321 07:27:37.168"/>
+</suite>
+<status status="PASS" starttime="20220321 07:26:55.805" endtime="20220321 07:27:37.168"/>
+</suite>
+<kw name="After each Test Suite" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>Test Suite Ended</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220321 07:27:37.168" level="INFO">Test Suite Ended</msg>
+<status status="PASS" starttime="20220321 07:27:37.168" endtime="20220321 07:27:37.168"/>
+</kw>
+<status status="PASS" starttime="20220321 07:27:37.168" endtime="20220321 07:27:37.168"/>
+</kw>
+<status status="FAIL" starttime="20220321 07:24:44.484" endtime="20220321 07:27:37.168"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="5" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="CommonTC">TestCases.CommonTC</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Login">TestCases.CommonTC.Login</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s2" name="RACSideTC">TestCases.RACSideTC</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s1" name="DDL">TestCases.RACSideTC.DDL</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s2" name="downloadFromWeb">TestCases.RACSideTC.downloadFromWeb</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s3" name="downloadValidation">TestCases.RACSideTC.downloadValidation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2-s4" name="testSikuli">TestCases.RACSideTC.testSikuli</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="RBIAdminPortalTC">TestCases.RBIAdminPortalTC</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3-s1" name="addLicenseKey">TestCases.RBIAdminPortalTC.addLicenseKey</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3-s2" name="createUser">TestCases.RBIAdminPortalTC.createUser</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220321 07:24:44.464" level="ERROR">Error in file 'C:\RAC Automation_RobotFramework\SanitySuite\TestCases\RBIAdminPortalTC\addLicenseKey.robot' on line 17: Non-existing setting 'Arguments'.</msg>
+</errors>
+</robot>
